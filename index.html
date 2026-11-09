@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gala? Ano Tara?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="spin"></div><p>Loading Gala, Ano Tara?</p></div>
+
+<nav id="nav" hidden>
+  <button class="logo" onclick="go('home')">Gala,<b> Ano Tara?</b></button>
+  <div class="links">
+    <button data-p="home">🏠 Home</button>
+    <button data-p="Luzon">🏔️ Luzon</button>
+    <button data-p="Visayas">🏝️ Visayas</button>
+    <button data-p="Mindanao">🌴 Mindanao</button>
+    <button data-p="expenses">💰 Expenses</button>
+    <button data-p="agencies">🧭 Agencies</button>
+  </div>
+  <div class="user" title="Change profile" onclick="welcome()"><span class="av" id="av"></span><span id="un"></span></div>
+</nav>
+
+<main id="app"></main>
+
+<footer>
+  <p>Made with ❤️ by Gala Pilipinas Team — Promoting Philippine Tourism 🇵🇭</p>
+  <p><a href="#" onclick="return soon()">About</a><a href="#" onclick="return soon()">Privacy</a><a href="#" onclick="return soon()">Contact</a><a href="#" onclick="return soon()">Terms</a></p>
+</footer>
+
+<label id="dn" title="Drag from day to night">☀️<input type="range" id="dnr" min="0" max="100" value="0" aria-label="Day to night">🌙</label>
+<div id="modal" onclick="if(event.target===this)closeModal()"></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
